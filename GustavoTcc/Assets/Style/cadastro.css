@@ -57,8 +57,9 @@ body {
   justify-content: center;
 }
 
-.fa-solid, .fa-user-tie {
-  color: white;
+.icon-svg {
+  width: 30px;
+  color: #fafafa;
 }
 
 ::placeholder {
