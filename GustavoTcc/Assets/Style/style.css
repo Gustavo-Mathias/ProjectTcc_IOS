@@ -1,15 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f1f1f1;
 }
 
 nav {
-  background-color: rgb(0, 163, 180);
+  background-color: #0028B4;
   display: flex !important;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  padding: 10px 80px;
   height: 80px;
 }
 
@@ -22,11 +27,14 @@ nav ul {
 
 nav ul li a {
   display: block;
-  color: white;
+  font-weight: bolder;
+  font-size: 17px;
+  color: #f1f1f1;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px;
+  align-items: center;
+  justify-content: center;
 }
 
 nav ul li a:hover {
@@ -47,45 +55,86 @@ nav ul li a:hover {
   width: 300px;
   padding: 10px 5px;
   margin-right: 10px;
-  border: 1px solid #fff;
+  border: 1px solid #f1f1f1;
   border-radius: 10px;
 }
 
 .search-bar button {
   padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #ff6e22;
+  color: #f1f1f1;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.search-bar button:hover {
-  background-color: #45a049;
-}
-
-.container-fluid{
-  background-color: rgb(0, 163, 180);
-}
-
-
-section {
-  padding: 2rem;
-}
-
-#contact {
-  background-color: rgb(0, 163, 180);
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.carrousel {
+  box-shadow: 2px 2px black;
   overflow: hidden;
-  width: 600px;
-  max-width: 100%;
-  margin: 62px auto;
-  color: white;
+  height: 600px;
+  width: 1349px;
 }
 
+.container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+  margin: 0;
+}
+
+img {
+  object-fit: cover;
+}
+
+.sobre {
+  display: flex;
+  align-items: center;
+}
+
+.about{
+  width: 45%;
+  font-size: 18px;
+  color: #050505;
+  margin-left: 40px;
+}
+
+.mvv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mvv h2 {
+  color: #0028B4;
+}
+
+.mvv p {
+  color: #050505;
+  font-size: 18px;
+}
+
+.services {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #0028B4;
+  text-align: center;
+}
+
+.services p {
+  color: #f1f1f1;
+  font-size: 18px;
+}
+
+.descobrir {
+  padding: 10px 20px;
+  background-color: #ff6e22;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 .site-footer {
+  margin-top: 62px;
   background-color: #f1f1f1;
   display: flex;
   flex-direction: row;
@@ -94,13 +143,24 @@ section {
 
 footer p {
   padding: 5px;
-  color: #555555;
+  color: #050505;
 }
 
 .footer-social a{
+  color: #ff6e22;
+  text-decoration: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 5px;
+  margin-right: 5px;
+}
+
+.footer-social a:hover {
+  color: #050505;
+}
+
+.footer-social img {
+  margin-right: 10px;
 }
 
 form label {
@@ -118,7 +178,7 @@ form button {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   background-color: #4CAF50;
-  color: white;
+  color: #f1f1f1;
   border: none;
   cursor: pointer;
 }
