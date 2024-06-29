@@ -9,12 +9,20 @@ body {
   justify-content: flex-start;
   height: 100vh;
 }
-.header {
-  background-color: #00a6a6;
+nav {
+  background-color: rgb(0, 163, 180);
   width: 100%;
-  text-align: center;
-  padding: 20px 0;
+  padding: 10px 40px;
+  height: 100px;
 }
+
+nav div a img {
+  display: flex;
+  justify-content: center;
+  width: 10vw;
+  margin: auto;
+} 
+
 .header h1 {
   margin: 0;
   color: white;
