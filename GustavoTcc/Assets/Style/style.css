@@ -69,8 +69,38 @@ nav ul li a:hover {
 }
 
 
-section {
-  padding: 2rem;
+#home {
+  margin-top: 62px;
+  background-color: #f1f1f1;
+}
+
+.sobre {
+  display: flex;
+}
+
+#home p {
+  text-align: center;
+  width: 50%;
+  margin-top: 50px;
+  margin-right: auto;
+  display: flex;
+}
+
+.botao-agenda {
+  width: 150px;
+  text-align: center;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer !important;
+}
+
+.botao-agenda button:hover {
+  background-color: #45a049 !important;
 }
 
 #contact {
@@ -80,7 +110,7 @@ section {
   overflow: hidden;
   width: 600px;
   max-width: 100%;
-  margin: 62px auto;
+  margin: 0 auto 62px auto;
   color: white;
 }
 
