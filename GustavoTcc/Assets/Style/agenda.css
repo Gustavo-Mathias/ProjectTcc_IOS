@@ -68,76 +68,111 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.carrousel {
-  box-shadow: 2px 2px black;
-  overflow: hidden;
-  height: 600px;
-  width: 1349px;
-}
 
 .container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(0);
-  margin: 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
-img {
-  object-fit: cover;
-}
-
-.sobre {
-  display: flex;
-  align-items: center;
-}
-
-.about{
-  width: 45%;
-  font-size: 18px;
-  color: #050505;
-  margin-left: 40px;
-}
-
-.mvv {
-  display: flex;
-  justify-content: space-around;
-}
-
-.mvv img {
-  margin-left: 55px;
-}
-
-.mvv h2 { 
+header {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
   color: #0028B4;
-  font-family: 'DynaPuff';
+  margin-bottom: 10px;
 }
 
-.mvv p {
-  color: #050505;
-  font-size: 18px;
-  text-align: center;
+main {
+  display: flex;
+  flex-direction: column;
 }
 
-.services {
-  padding-top: 20px;
-  padding-bottom: 40px;
+.form-container {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #0028B4;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
   background-color: #0028B4;
-  text-align: center;
-}
-
-.services p {
-  color: #f1f1f1;
-  font-size: 18px;
-}
-
-.descobrir {
-  padding: 10px 20px;
-  background-color: #ff6e22;
-  color: #f1f1f1;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0028B4;
+}
+
+.agenda-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #0028B4;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  table {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+      flex-direction: column;
+  }
+
+  label,
+  input,
+  select,
+  button {
+      font-size: 14px;
+  }
 }
 
 .site-footer {
@@ -169,16 +204,3 @@ footer p {
 .footer-social img {
   margin-right: 10px;
 }
-
-/* Animações */
-.animated-section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.animated-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
