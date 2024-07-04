@@ -101,3 +101,197 @@ nav ul li a:hover {
  text-align: center;
  color: #050505;
 }
+
+.services {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #0028B4;
+    text-align: center;
+  }
+  
+  .services p {
+    color: #f1f1f1;
+    font-size: 18px;
+  }
+  
+  .descobrir {
+    padding: 10px 20px;
+    background-color: #ff6e22;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .descobrir:hover {
+    background-color: #e05c14; /* Cor um pouco mais escura para o efeito hover */
+    color: #f1f1f1;
+  }
+  
+  .site-footer {
+    margin-top: 62px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  footer p {
+    padding: 5px;
+    color: #050505;
+  }
+  
+  .footer-social a{
+    color: #ff6e22;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  
+  .footer-social a:hover {
+    color: #050505;
+  }
+  
+  .footer-social img {
+    margin-right: 10px;
+  }
+
+@media (max-width: 768px) {
+    .change {
+        margin-left: 280px;    
+    }
+}
+
+@media (max-width: 480px) {
+    .change{
+        margin-left: 160px;
+    }
+
+    .exame {
+        font-size: 26px;
+    }
+    
+    .titulo {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        padding: 10px 20px;
+    }
+  
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        width: 100%;
+    }
+  
+    nav ul.active {
+        display: flex;
+    }
+  
+    nav ul li {
+        width: 100%;
+    }
+  
+    nav ul li a {
+        text-align: left;
+        padding: 10px;
+        width: 100%;
+    }
+  
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+  
+    .search-bar input[type=text] {
+        width: calc(100% - 120px);
+    }
+  
+    .hamburger {
+        display: flex;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .site-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .footer-content, .footer-social {
+        margin-bottom: 20px;
+    }
+  
+    .footer-social a {
+        justify-content: center;
+        margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-content, .footer-social {
+        width: 100%;
+    }
+  
+    .footer-social a {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .services h2 {
+        font-size: 24px;
+    }
+  
+    .services p {
+        font-size: 16px;
+    }
+  
+    .descobrir {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services h2 {
+        font-size: 22px;
+    }
+  
+    .services p {
+        font-size: 14px;
+    }
+  
+    .descobrir {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services h2 {
+        font-size: 20px;
+    }
+  
+    .services p {
+        font-size: 12px;
+        margin: 0 10px 15px 10px;
+    }
+  
+    .descobrir {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+  }
