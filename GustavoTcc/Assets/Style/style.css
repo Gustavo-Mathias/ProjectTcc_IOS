@@ -16,6 +16,20 @@ nav {
   align-items: center;
   padding: 10px 80px;
   height: 80px;
+  position: relative;
+}
+
+nav .menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+nav .menu-toggle .bar {
+  background-color: #f1f1f1;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
 }
 
 nav ul {
@@ -23,6 +37,10 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
 }
 
 nav ul li a {
@@ -62,21 +80,6 @@ nav ul li a:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.hamburger span {
-  height: 3px;
-  width: 25px;
-  background-color: white;
-  margin: 4px;
-  border-radius: 5px;
 }
 
 
@@ -242,43 +245,46 @@ footer p {
 
 @media (max-width: 768px) {
   nav {
-      flex-direction: row;
-      padding: 10px 20px;
+    height: 8vh;
+    padding: 10px 20px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  nav .menu-toggle {
+    display: flex;
   }
 
   nav ul {
-      flex-direction: column;
-      align-items: flex-start;
-      display: none;
-      width: 100%;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0028B4;
+    position: absolute;
+    top: 80px;
+    left: 0;
   }
 
-  nav ul.active {
-      display: flex;
+  nav ul.show {
+    display: flex;
   }
 
   nav ul li {
-      width: 100%;
-  }
-
-  nav ul li a {
-      text-align: left;
-      padding: 10px;
-      width: 100%;
+    margin: 0;
+    text-align: center;
   }
 
   .search-bar {
-      width: 100%;
-      margin-top: 10px;
-      justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .search-bar input[type=text] {
-      width: calc(100% - 120px);
+    width: calc(100% - 120px);
   }
 
-  .hamburger {
-      display: flex;
+  .search-bar button {
+    width: 100px;
   }
 }
 
@@ -290,6 +296,7 @@ footer p {
   }
 
   .footer-content, .footer-social {
+    width: 80;
       margin-bottom: 20px;
   }
 
@@ -301,7 +308,7 @@ footer p {
 
 @media (max-width: 480px) {
   .footer-content, .footer-social {
-      width: 100%;
+      width: 80%;
   }
 
   .footer-social a {
@@ -347,6 +354,7 @@ footer p {
 @media (max-width: 768px) {
 
   .title{
+    margin-left: 0;
     text-align: center;
   }
 
@@ -364,6 +372,7 @@ footer p {
 
 @media (max-width: 480px) {
   .about {
+    margin-left: 0;
       font-size: 14px;
   }
 
