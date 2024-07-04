@@ -15,30 +15,43 @@
 
 <body style="background-color: #f1f1f1;">
    
-  <nav>
-    <div class="header">
-      <a href="index.html"><img style="width: 10vw; margin-left: 20px;" src="GustavoTcc/Assets/Img/logo.png" alt=""></a>
+  <nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img class="img-nav" src="GustavoTcc/Assets/Img/logo.png" alt="Logo"></a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">PÁGINA INICIAL</a></li>
+          <li><a href="exames.html">EXAMES</a></li>
+          <li><a style="color: #ff6e22;" target="_blank" href="login.html">ENTRAR</a></li>
+        </ul>
+        <div class="search-container">
+          <input style="background-color: #f1f1f1;" type="text" placeholder="Precisa de algo?">
+          <div>
+            <button type="submit">Buscar</button>
+          </div>
+        </div>
+        
     </div>
-    <div class="menu-toggle" id="menu-toggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-    <ul>
-      <li><a href="index.html">PÁGINA INICIAL</a></li>
-      <li><a href="exames.html">EXAMES</a></li>
-      <li><a style="color: #ff6e22;" target="_blank" href="login.html">ENTRAR</a></li>
-    </ul>
-    </nav>
+</nav>
   
 
-  <section class="carrousel">
-    <div class="container" id="img" style="margin: 0; padding: 0;">
-      <img src="GustavoTcc/Assets/Img/cachoro.jpg" alt="">
-      <img src="GustavoTcc/Assets/Img/gato-e-cachorro.jpg" alt="">
-      <img src="GustavoTcc/Assets/Img/gato.jpg" alt="">
-    </div>
-  </section>
+<section class="carousel-section">
+  <div class="carousel-container">
+      <div class="carousel-slide">
+          <img src="GustavoTcc/Assets/Img/gato-e-cachorro.jpg" alt="Imagem 1">
+          <img  src="GustavoTcc/Assets/Img/gato.jpg" alt="Imagem 2">
+          <img  src="GustavoTcc/Assets/Img/cachoro.jpg" alt="Imagem 3">
+      </div>
+      <button class="prev" id="prev">❮</button>
+      <button class="next" id="next">❯</button>
+  </div>
+</section>
 
   <section id="home" class="animated-section sobre">
     <h2 class="title">Sobre Nós</h2>

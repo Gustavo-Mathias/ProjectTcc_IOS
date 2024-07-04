@@ -25,23 +25,13 @@ nav div a img {
   margin: auto;
 } 
 
-.header h1 {
-  margin: 0;
-  color: white;
-  font-size: 24px;
-}
-
-.header span {
-  color: white;
-}
-
 .container {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 600px;
-  max-width: 100%;
+  width: 90%;
+  max-width: 600px;
   text-align: center;
   margin-top: 62px;
   margin-left: auto;
@@ -77,12 +67,11 @@ nav div a img {
   color: #f1f1f1;
 }
 
-
-
 .input-group {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  flex-wrap: wrap; /* Para ajustar os inputs em telas pequenas */
 }
 
 .input-group input {
@@ -91,24 +80,10 @@ nav div a img {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
-}
-
-input[type="text"] {
   background-color: #0028B4;
   color: #f1f1f1;
   border: none;
-}
-
-input[type="email"] {
-  background-color: #0028B4;
-  color: #f1f1f1;
-  border: none;
-}
-
-input[type="password"] {
-  background-color: #0028B4;
-  color: #f1f1f1;
-  border: none;
+  margin-bottom: 10px; /* Para espaçamento entre inputs em telas pequenas */
 }
 
 input[type="password"].repeat-password {
@@ -126,4 +101,18 @@ button {
   cursor: pointer;
   width: 100%;
   margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .img-login {
+    width: 15vh;
+  }
+
+  .input-group input {
+      width: 100%;
+  }
+
+  .form-container {
+      padding: 20px;
+  }
 }

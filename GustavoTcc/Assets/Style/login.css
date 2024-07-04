@@ -25,12 +25,6 @@ nav div a img {
   margin: auto;
 } 
 
-.header h1 {
-  margin: 0;
-  color: white;
-  font-size: 24px;
-}
-
 .login-container {
   background-color: white;
   display: flex;
@@ -94,4 +88,28 @@ nav div a img {
 
 h2 h4 {
   color: #050505;
+}
+
+
+@media (max-width: 600px) {
+
+  .img-login {
+    width: 15vh;
+  }
+
+  .login-container {
+      width: 90%;
+      padding: 15px;
+  }
+
+  .login-container button,
+  .social-buttons {
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  .login-container input {
+      width: calc(100% - 16px);
+      padding: 8px;
+  }
 }
