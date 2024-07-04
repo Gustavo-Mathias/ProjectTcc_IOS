@@ -1,18 +1,31 @@
-const imgs = document.getElementById("img");
-const img = document.querySelectorAll("#img img");
+document.addEventListener('DOMContentLoaded', () => {
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    const slideContainer = document.querySelector('.carousel-slide');
+    const slides = document.querySelectorAll('.carousel-slide img');
+    const slideCount = slides.length;
+    let index = 0;
 
-let idx = 0;
+    const updateSlidePosition = () => {
+        slideContainer.style.transform = `translateX(${-index * 100}%)`;
+    };
 
-function carrousel(){
-    idx++;
+    nextButton.addEventListener('click', () => {
+        index = (index + 1) % slideCount;
+        updateSlidePosition();
+    });
 
-    if(idx > img.length - 1){
-        idx = 0;
-    }
-    imgs.style.transform = `translateX(${-idx * 1349}px)`
-}
+    prevButton.addEventListener('click', () => {
+        index = (index - 1 + slideCount) % slideCount;
+        updateSlidePosition();
+    });
 
-setInterval(carrousel, 1000);
+    // Opcional: Adicionar rotação automática
+    setInterval(() => {
+        nextButton.click();
+    }, 3000);  // Trocar imagem a cada 3 segundos
+});
+
 
 document.addEventListener('DOMContentLoaded', function () {
   var sections = document.querySelectorAll('.animated-section');
@@ -39,3 +52,10 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', checkVisibility);
   checkVisibility();
 });
+
+document.getElementById('menu-toggle').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+
+  
+
